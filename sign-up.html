@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="sign-up.css">
+    
+  </head>
+  <body>
+    <nav class="navbar">
+        <div id="logo">
+            <a class="navbar-brand" href="#">
+              <img src="logo.png" alt="Logo">
+            </a>
+        </div>
+        <div id="bar">
+            <a class="bar-menu">Home</a>
+            <a class="bar-menu">About</a>
+            <a>
+                <button class="bar-button">Login</button>
+            </a>
+        </div>
+    </nav>
+
+    <div>
+        <p id="title">Sign Up</p>
+    </div>
+
+    <div class="form">
+      <form id="form-input">
+        <div class="input-icon">
+          <i class="fas fa-user"></i>
+          <input name="name" id="name" class="form-input" placeholder="Name" type="text" >
+          <span class="form-underline"></span>
+        </div>
+        
+        <div class="input-icon">
+          <i class="fas fa-id-card"></i>
+          <input name="nationalIdentificationNumber" id="nin"  class="form-input" placeholder="National Identification Number" type="text" >
+          <span class="form-underline"></span>
+        </div>
+        
+        <div class="input-icon">
+          <i class="fas fa-calendar-week"></i>
+          <input name="dateOfBirth" id="dob"  class="form-input" placeholder="Date of Birth" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" >
+          <span class="form-underline"></span>  
+        </div>
+        
+        <div class="input-icon">
+          <i class="fas fa-phone-alt"></i>
+          <input name="contact" id="contact"  class="form-input" placeholder="Contact Number" type="text" >
+          <span class="form-underline"></span>
+        </div>
+        
+        <div class="input-icon">
+          <i class="fas fa-envelope"></i>
+          <input name="email" id="email" class="form-input" placeholder="Email" type="email" >
+          <span class="form-underline"></span>
+        </div>
+
+        <div class="input-icon">
+          <i class="fas fa-home"></i>
+          <input name="address" id="address" class="form-input" placeholder="Address" type="text" >
+          <span class="form-underline"></span>
+        </div>
+  
+        <div class="input-icon">
+          <i class="fas fa-user"></i>
+          <select name="disability" id="disability" onchange="yesnoCheck(this);">
+              <option value="select">Do You Have Disability?</option>
+              <option value="Yes">Yes</option>
+              <option value="No">No</option>
+          </select>
+          <span class="form-underline"></span>
+        </div>
+        
+        <div id="yes" style="display: none;">
+          <div class="input-icon">
+            <i class="fas fa-user"></i>
+            <input name="disability_type" id="disability_type" class="form-input" placeholder="Type of Disability" type="text" >
+            <span class="form-underline"></span>
+          </div>
+
+          <div class="input-icon">
+            <i class="fas fa-home"></i>
+            <select name="disability2" id="disability2" onchange="yesnoCheck2(this);">
+                <option value="select">Do You Have Disability Organization?</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+            <span class="form-underline"></span>
+          </div>
+
+          <div id="yes2" style="display: none;">
+            <div class="input-icon">
+              <i class="fas fa-home"></i>
+              <input name="disability_organization" id="disability_organization" class="form-input" placeholder="Name of Disability Organization" type="text" >
+              <span class="form-underline"></span>
+            </div>
+          </div>
+        </div>
+  
+        <textarea name="helpneeded" id="helpneeded" placeholder="Help Needed" cols="30" rows="5"></textarea>
+        
+        <div class="input-icon">
+          <i class="fas fa-user"></i>
+          <input name="username" id="username" class="form-input" placeholder="Username" type="text" >
+          <span class="form-underline"></span>
+        </div>
+
+        <div class="input-icon">
+          <i class="fas fa-lock"></i>
+          <input name="password" id="password" class="form-input" placeholder="Password" type="password" >
+          <span class="form-underline"></span>
+        </div>
+        
+        <div class="input-icon">
+          <i class="fas fa-lock"></i>
+          <input name="password2" id="password2" class="form-input" placeholder="Re-enter Password" type="password" >
+          <span class="form-underline"></span>
+        </div>
+  
+        <button id="submit">Submit</button>  
+      </form>
+    </div>
+    <script src="sign-up.js"></script>
+  </body>
+  <br>
+</html>
