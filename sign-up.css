@@ -217,6 +217,10 @@ textarea:focus {
 
 }
 
+#submit:hover {
+  background-color: #3da5da;
+}
+
 /* ICONS */
 .input-icon i{
   margin-right: 5px;

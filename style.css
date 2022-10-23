@@ -94,7 +94,7 @@ i {
 /* End About */
 
 /* Login */
-form > div:nth-child(1) {
+.login > div > div:nth-child(2) > form > div:nth-child(1) {
   color: #2464ab;
   margin: 0px 0px 100px;
 }
