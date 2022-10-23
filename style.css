@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* All Style */
+body {
+  font-family: "Poppins", sans-serif !important;
+}
+.border-blue {
+  color: #ffff;
+  background-color: #2464ab;
+  border-radius: 10px;
+  border: 0px;
+}
+.border-orange {
+  color: #ffff;
+  background-color: #f18700;
+  border-radius: 10px;
+  border: 0px;
+}
+button:hover {
+  background-color: #3da5da;
+}
+/* End All Style */
+
+/* Navbar */
+.teks {
+  overflow: hidden;
+  color: black !important;
+}
+.teks:hover {
+  color: #2464ab !important;
+}
+.teks::after {
+  content: "";
+  display: block;
+  width: 80%;
+  border-bottom: 2px solid #2464ab;
+  padding-bottom: 0.2em;
+  transform: translate(-150%);
+  transition: all 1s ease;
+}
+.teks:hover::after {
+  transform: translate(150%);
+}
+ul > li:nth-child(3) > a:hover {
+  background-color: #3da5da;
+}
+/* End Navbar */
+
+/* Home */
+.home > div > div:nth-child(2) > div:nth-child(1) {
+  font-size: 50px;
+}
+.home > div > div:nth-child(2) > div:nth-child(2) {
+  font-size: 25px;
+}
+/* End Home */
+
+/* About */
+.about > div:nth-child(1) {
+  height: 615px;
+  background-color: #3da5da;
+}
+.about > div:nth-child(1) > div > img {
+  margin: 200px 0px;
+}
+.about > div:nth-child(2) {
+  background-color: #2464ab;
+}
+.about > div:nth-child(3) {
+  background-color: #407bff;
+}
+.about > div:nth-child(4) {
+  background-color: #ffff;
+  color: #2464ab;
+}
+.about > div:nth-child(5) {
+  background-color: #f6b801;
+}
+.about > div:nth-child(5) > div > a:hover {
+  font-weight: bolder;
+  color: #ffff;
+}
+
+/* End About */
