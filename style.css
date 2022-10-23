@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 /* All Style */
 body {
@@ -10,14 +10,24 @@ body {
   border-radius: 10px;
   border: 0px;
 }
+.border-blue:hover {
+  color: #ffff;
+  background-color: #3da5da;
+}
 .border-orange {
   color: #ffff;
   background-color: #f18700;
   border-radius: 10px;
   border: 0px;
 }
-button:hover {
-  background-color: #3da5da;
+.blue {
+  color: #2464ab;
+}
+.blue:hover {
+  color: #3da5da;
+}
+i {
+  color: #2464ab;
 }
 /* End All Style */
 
@@ -41,17 +51,18 @@ button:hover {
 .teks:hover::after {
   transform: translate(150%);
 }
-ul > li:nth-child(3) > a:hover {
-  background-color: #3da5da;
-}
 /* End Navbar */
 
 /* Home */
 .home > div > div:nth-child(2) > div:nth-child(1) {
-  font-size: 50px;
+  color: #2464ab;
+  font-size: 60px;
 }
 .home > div > div:nth-child(2) > div:nth-child(2) {
   font-size: 25px;
+}
+.home > div > div:nth-child(2) > div:nth-child(2) > span {
+  color: #f18700;
 }
 /* End Home */
 
@@ -80,5 +91,27 @@ ul > li:nth-child(3) > a:hover {
   font-weight: bolder;
   color: #ffff;
 }
-
 /* End About */
+
+/* Login */
+form > div:nth-child(1) {
+  color: #2464ab;
+  margin: 0px 0px 100px;
+}
+.box-login {
+  border-bottom: 2px solid #808080;
+  padding: 8px 0;
+}
+.box-login i {
+  font-size: 23px;
+}
+.box-login input {
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 18px;
+}
+.box-login input::placeholder {
+  color: #808080;
+}
+/* End Login */

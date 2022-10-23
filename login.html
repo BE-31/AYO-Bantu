@@ -15,7 +15,6 @@
 
     <!-- Eksternal CSS -->
     <link rel="stylesheet" href="style.css" />
-
   </head>
   <body>
     <nav class="navbar navbar-expand-md bg-white sticky-top shadow">
@@ -42,23 +41,41 @@
       </div>
     </nav>
 
-    <main class="container home">
+    <main class="container login">
       <div class="row align-items-center">
         <div class="col-md-6 py-4">
-          <img class="w-100 img-fluid" src="img/home.png" alt="gambar alam" />
+          <img class="w-100 img-fluid" src="img/login.png" alt="gambar alam" />
         </div>
-        <div class="col-md-6 pb-4 ps-5 mx-auto">
-          <div class="fw-bolder">AYO Bantu!</div>
-          <div class="text-muted my-3 fw-bolder">
-            For Youth, By Youth Together <br />
-            We Turn The World Into <br />
-            <span>Brighter Place.</span>
-          </div>
-          <div class="mt-5">
-            <a class="border-blue px-4 py-2 fw-bolder fs-4 text-decoration-none" href="login.html">
-              Login to Start
-            </a>
-          </div>
+        <div class="col-md-6 py-4">
+          <form class="row mx-5">
+            <div class="col-8 p-0 fw-bolder fs-1">Login</div>
+            <div class="row mb-5">
+              <div class="col-4 form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                <label class="form-check-label" for="exampleRadios1">
+                  Admin
+                </label>
+              </div>
+              <div class="col-4 form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                <label class="form-check-label" for="exampleRadios2">
+                  User
+                </label>
+              </div>
+            </div>
+            <div class="col-8 mb-3 box-login">
+              <i class="bi bi-person-fill"></i>
+              <input type="text" class="text-dark" id="username" placeholder="Username" />
+            </div>
+            <div class="col-8 mb-3 box-login">
+              <i class="bi bi-lock-fill"></i>
+              <input type="password" class="text-dark" id="password" placeholder="Password" />
+            </div>
+            <button type="submit" class="btn border-blue col-8 mt-5">Submit</button>
+            <div class="col-8 my-3 text-center">
+              Don't have an account? <a class="text-decoration-none blue" href="signup.html">Sign UP</a>
+            </div>
+          </form>
         </div>
       </div>
     </main>
