@@ -4,6 +4,7 @@ const loginHandler = async (e) => {
     const form = document.querySelector('form');
     const username = document.querySelector('.user').value;
     const password = document.querySelector('.password').value;
+    let role;
     const data = await fetch ("https://634d42a5f5d2cc648ea0d537.mockapi.io/api/ayo/users")
     const raw = await data.json();
     const user = raw.forEach(element => {
@@ -11,9 +12,12 @@ const loginHandler = async (e) => {
         console.log(element.username + ' ' + element.password);
         if(element.username === username && element.password === password){
             ada = true;
+            role = element.role;
         }
     });
     if (ada===true){
+        window.localStorage.setItem('username',username);
+        window.localStorage.setItem('role',role);
         window.location.href = "../dashboard";
     }
     else{
