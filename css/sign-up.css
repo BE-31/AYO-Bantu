@@ -285,13 +285,13 @@ textarea:focus {
 #dialogbox{
   display: none;
   position: absolute;
-  background: #ab2424;
+  background: #2464AB;
   border-radius:7px; 
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.575);
   transition: 0.3s;
   width: 40%;
   z-index: 10;
-  top:100%;
+  top:150%;
   left: 0;
   right: 0;
   margin: auto;
@@ -319,7 +319,7 @@ textarea:focus {
   text-overflow: ellipsis;
   text-transform: uppercase;
   color: rgb(var(--pure-material-onprimary-rgb, 255, 255, 255));
-  background-color: #ab2424;
+  background-color: #2464AB;
   /* background-color: rgb(1, 47, 61) */
   box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
   font-family: var(--pure-material-font, "Roboto", "Segoe UI", BlinkMacSystemFont, system-ui, -apple-system);
@@ -417,7 +417,7 @@ textarea:focus {
 }
 
 #dialogbox > div > #dialogboxhead{ 
-  background: rgb(211, 98, 98); 
+  background: #2464AB; 
   font-size:19px; 
   padding:10px; 
   color:rgb(255, 255, 255); 
@@ -427,7 +427,7 @@ textarea:focus {
 #dialogbox > div > #dialogboxbody{ 
   background:rgb(255, 255, 255); 
   padding:20px; 
-  color:#ab2424; 
+  color:#2464AB; 
   font-family: Verdana, Geneva, Tahoma, sans-serif ;
 }
 

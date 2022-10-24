@@ -105,6 +105,7 @@ function checkPassword(){
     }
     if(document.forms["form-input"]["password"].value != document.forms["form-input"]["password2"].value){
         customAlert.alert('Try to re-enter the same password','Oops.. Something goes wrong!')
+        document.forms["form-input"]["password"].focus()
         return false
     }
     else {
@@ -129,7 +130,11 @@ form.addEventListener("submit", (event) => {
             })
                 .then(res => res.json())
                 .then(data => console.log(data))
-                .catch(err => console.log(err))        
+                .catch(err => console.log(err))  
+                
+                customAlert.alert('Registration Success! Login to continue.','Success')
+                document.forms["form-input"]["name"].focus()
+
         }
     }
 })
@@ -145,7 +150,7 @@ function CustomAlert(){
       let winH = window.innerHeight;
       dialogoverlay.style.height = winH+"px";
       
-      dialogbox.style.top = "100px";
+      dialogbox.style.top = "40%";
   
       dialogoverlay.style.display = "block";
       dialogbox.style.display = "block";
