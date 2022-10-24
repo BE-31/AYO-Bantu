@@ -32,6 +32,14 @@ i {
 /* End All Style */
 
 /* Navbar */
+.navbar-toggler span{
+  background-color: rgb(94, 93, 93);
+  width: 1.5em;
+  height: 0.2em;
+  display: block;
+  margin: 0.2em 0;
+  border-radius: 1em;
+}
 .teks {
   overflow: hidden;
   color: black !important;
