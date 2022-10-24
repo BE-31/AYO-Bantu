@@ -1,77 +1,57 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
 
 /* RESET STYLE */
-* {
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    list-style: none;
-    font-family: "Poppins", sans-serif;
-    box-sizing: border-box;
+body {
+    font-family: "Poppins", sans-serif !important;
+  }
+  .border-blue {
+    color: #ffff;
+    background-color: #2464ab;
+    border-radius: 10px;
+    border: 0px;
+  }
+  .border-blue:hover {
+    color: #ffff;
+    background-color: #3da5da;
+  }
+  .border-orange {
+    color: #ffff;
+    background-color: #f18700;
+    border-radius: 10px;
+    border: 0px;
+  }
+  .blue {
+    color: #2464ab;
+  }
+  .blue:hover {
+    color: #3da5da;
   }
 
-
 /* NAVBAR */
-.navbar {
-    display: flex;
-    position: fixed;
-    justify-content: space-between;
-    top: 0;
-    left: 0;
-    right: 0;
-    background-color: #FFF;
-    z-index: 2;
-}
-
-#logo {
-    margin-left: 5vw;
-}
-
-#bar {
-    display: flex;
-    margin-right: 5vw;
-}
-
-.bar-menu { 
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 0.5vw 2vw;
-    gap: 0.5vw;
-
-    font-style: normal;
-    font-weight: 600;
-    font-size: 1.2rem;
-    line-height: 30px;
-
-    color: #2464AB;
-    text-decoration: none;
-}
-
-.bar-button {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 0.5vw 2vw;
-    margin-left: 1vw;
-    gap: 0.5vw;
-    background-color: #FFF;
-    border-color: #2464AB;
-    border-radius: 6px;
-    border-width: 0.2vw;
-
-    /* text */
-    font-style: normal;
-    font-weight: 600;
-    font-size: 1.2rem;
-    line-height: 30px;
-    color:#2464AB;
-}
+.teks {
+    overflow: hidden;
+    color: black !important;
+  }
+  .teks:hover {
+    color: #2464ab !important;
+  }
+  .teks::after {
+    content: "";
+    display: block;
+    width: 80%;
+    border-bottom: 2px solid #2464ab;
+    padding-bottom: 0.2em;
+    transform: translate(-150%);
+    transition: all 1s ease;
+  }
+  .teks:hover::after {
+    transform: translate(150%);
+  }
 
 /* BANNER */
 #banner {
     display: flex;
-    margin: 8vw 5vw 0vw 5vw;
+    margin: 4vw 5vw 0vw 5vw;
     justify-content: space-between;
     background-color: #2464AB;
     padding: 1vw;
@@ -122,7 +102,7 @@
     padding-right: 1vw;
 }
 
-img {
+img{
     display: flex;
     vertical-align: middle;
     border-radius: 5px;
