@@ -18,7 +18,7 @@ const loginHandler = async (e) => {
     if (ada===true){
         window.localStorage.setItem('username',username);
         window.localStorage.setItem('role',role);
-        window.location.href = "/user.html";
+        window.location.href = "/page/user.html";
     }
     else{
         alert("Username atau Password salah");
@@ -45,7 +45,7 @@ const seekHandler = async (e) => {
 }
 
 
-const btnSubmit = document.getElementsByClassName('btn-login');
+const btnSubmit = document.getElementById('btn-login');
 mataBuka.addEventListener('click', seekHandler);
 mataTutup.addEventListener('click', seekHandler);
-btnSubmit[0].addEventListener('click', loginHandler);
+btnSubmit.addEventListener('click', loginHandler);
