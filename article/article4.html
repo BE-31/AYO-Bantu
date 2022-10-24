@@ -28,24 +28,33 @@
     <link rel="stylesheet" href="/article.css" />
   </head>
   <body>
-    <nav class="navbar">
-      <div id="logo">
-        <a class="navbar-brand" href="#">
-          <img src="/logo.png" alt="Logo" />
+    <nav class="navbar navbar-expand-md bg-white sticky-top shadow">
+      <div class="container-fluid container">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand mb-0 h1" href="#">
+          <img src="/img/logo.png" alt="" width="80" height="40" />
         </a>
-      </div>
-      <div id="bar">
-        <a class="bar-menu">Home</a>
-        <a class="bar-menu">About</a>
-        <a href="/index.html">
-          <button class="bar-button">Log Out</button>
-        </a>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+          <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+            <li class="nav-item mx-md-3">
+              <a class="nav-link teks" aria-current="page" href="/user.html">Home</a>
+            </li>
+            <li class="nav-item me-md-3">
+              <a class="nav-link teks" aria-current="page" href="/about-login.html">About</a>
+            </li>
+            <li class="nav-item text-center">
+              <a class="nav-link active mx-md-2 px-md-3 text-white border-blue" aria-current="page" href="/index.html">Log Out</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
 
     <div class="article-image">
         <div>
-            <img src="image4.jpg" alt="mental health" width="50%" class="center">
+            <img src="image4.jpg" alt="mental health" width="50%" class="center"  style="margin-top:3vw ;">
         </div>
     </div>
 
