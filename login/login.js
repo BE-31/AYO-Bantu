@@ -2,8 +2,8 @@ const loginHandler = async (e) => {
     e.preventDefault();
     let ada = false;
     const form = document.querySelector('form');
-    const username = document.querySelector('.user').value;
-    const password = document.querySelector('.password').value;
+    const username = document.querySelector('#username').value;
+    const password = document.querySelector('#password').value;
     let role;
     const data = await fetch ("https://6350b9ac3e9fa1244e4bb9ad.mockapi.io/user")
     const raw = await data.json();
@@ -25,12 +25,12 @@ const loginHandler = async (e) => {
     }
 }
 
-const mataBuka = document.querySelector('.mata-buka');
-const mataTutup = document.querySelector('.mata-tutup');
+const mataBuka = document.querySelector('#mata-buka');
+const mataTutup = document.querySelector('#mata-tutup');
 
 const seekHandler = async (e) => {
     e.preventDefault();
-    const password = document.querySelector('.password');
+    const password = document.querySelector('#password');
     if(password.getAttribute('type') === 'password'){
         password.setAttribute('type','text');
         mataBuka.style.display = 'none';
@@ -45,7 +45,7 @@ const seekHandler = async (e) => {
 }
 
 
-const btnSubmit = document.getElementsByClassName('btn-submit');
+const btnSubmit = document.getElementsByClassName('btn-login');
 mataBuka.addEventListener('click', seekHandler);
 mataTutup.addEventListener('click', seekHandler);
 btnSubmit[0].addEventListener('click', loginHandler);
