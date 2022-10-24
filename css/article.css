@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+/* RESET STYLE */
+body {
+    font-family: "Poppins", sans-serif !important;
+  }
+  .border-blue {
+    color: #ffff;
+    background-color: #2464ab;
+    border-radius: 10px;
+    border: 0px;
+  }
+  .border-blue:hover {
+    color: #ffff;
+    background-color: #3da5da;
+  }
+  .border-orange {
+    color: #ffff;
+    background-color: #f18700;
+    border-radius: 10px;
+    border: 0px;
+  }
+  .blue {
+    color: #2464ab;
+  }
+  .blue:hover {
+    color: #3da5da;
+  }
+
+/* NAVBAR */
+.teks {
+    overflow: hidden;
+    color: black !important;
+  }
+  .teks:hover {
+    color: #2464ab !important;
+  }
+  .teks::after {
+    content: "";
+    display: block;
+    width: 80%;
+    border-bottom: 2px solid #2464ab;
+    padding-bottom: 0.2em;
+    transform: translate(-150%);
+    transition: all 1s ease;
+  }
+  .teks:hover::after {
+    transform: translate(150%);
+  }
+
+/* BANNER */
+#banner {
+    display: flex;
+    margin: 4vw 5vw 0vw 5vw;
+    justify-content: space-between;
+    background-color: #2464AB;
+    padding: 1vw;
+    border-radius: 20px;
+}
+
+#banner-title {
+    font-size: larger;
+    font-weight: 900;
+    margin-top: 2%;
+    color: #FFF;
+}
+
+/* ARTICLE */
+.article {
+    display: flex;
+    margin: 1vw 5vw;
+    justify-content: flex-start;
+    padding: 1vw;
+    border-radius: 20px;
+    box-shadow: 5px 5px #2463ab34;
+}
+
+#article-title {
+    font-size: large;
+    font-weight: 700;
+    color: #2464AB;
+}
+
+#article-title p{
+    margin-bottom: 0%;
+}
+
+#info {
+    font-size: 0.8rem;
+    font-weight: 300;
+}
+
+.see-more {
+    font-size: 0.8rem;
+    font-weight: 300;
+    text-align: right;
+}
+
+#article-image {
+    
+    position: relative;
+    padding-right: 1vw;
+}
+
+img{
+    display: flex;
+    vertical-align: middle;
+    border-radius: 5px;
+}
+
+/* ARTICLE */
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.article-title {
+    margin: 2vw 2vw;
+    font-size: larger;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.article-news {
+    margin: 0vw 5vw;
+    text-align: justify;
+}

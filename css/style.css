@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+/* All Style */
+body {
+  font-family: "Poppins", sans-serif !important;
+}
+.border-blue {
+  color: #ffff;
+  background-color: #2464ab;
+  border-radius: 10px;
+  border: 0px;
+}
+.border-blue:hover {
+  color: #ffff;
+  background-color: #3da5da;
+}
+.border-orange {
+  color: #ffff;
+  background-color: #f18700;
+  border-radius: 10px;
+  border: 0px;
+}
+.blue {
+  color: #2464ab;
+}
+.blue:hover {
+  color: #3da5da;
+}
+i {
+  color: #2464ab;
+}
+/* End All Style */
+
+/* Navbar */
+.teks {
+  overflow: hidden;
+  color: black !important;
+}
+.teks:hover {
+  color: #2464ab !important;
+}
+.teks::after {
+  content: "";
+  display: block;
+  width: 80%;
+  border-bottom: 2px solid #2464ab;
+  padding-bottom: 0.2em;
+  transform: translate(-150%);
+  transition: all 1s ease;
+}
+.teks:hover::after {
+  transform: translate(150%);
+}
+/* End Navbar */
+
+/* Home */
+.home > div > div:nth-child(2) > div:nth-child(1) {
+  color: #2464ab;
+  font-size: 60px;
+}
+.home > div > div:nth-child(2) > div:nth-child(2) {
+  font-size: 25px;
+}
+.home > div > div:nth-child(2) > div:nth-child(2) > span {
+  color: #f18700;
+}
+/* End Home */
+
+/* About */
+.about > div:nth-child(1) {
+  height: 615px;
+  background-color: #3da5da;
+}
+.about > div:nth-child(1) > div > img {
+  margin: 200px 0px;
+}
+.about > div:nth-child(2) {
+  background-color: #2464ab;
+}
+.about > div:nth-child(3) {
+  background-color: #407bff;
+}
+.about > div:nth-child(4) {
+  background-color: #ffff;
+  color: #2464ab;
+}
+.about > div:nth-child(5) {
+  background-color: #f6b801;
+}
+.about > div:nth-child(5) > div > a:hover {
+  font-weight: bolder;
+  color: #ffff;
+}
+/* End About */
+
+/* Login */
+.login > div > div:nth-child(2) > form > div:nth-child(1) {
+  color: #2464ab;
+  margin: 0px 0px 100px;
+}
+.box-login {
+  border-bottom: 2px solid #808080;
+  padding: 8px 0;
+}
+.box-login i {
+  font-size: 23px;
+}
+.box-login input {
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 18px;
+}
+.box-login input::placeholder {
+  color: #808080;
+}
+/* End Login */
