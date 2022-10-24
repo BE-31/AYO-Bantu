@@ -5,7 +5,7 @@ const loginHandler = async (e) => {
     const username = document.querySelector('.user').value;
     const password = document.querySelector('.password').value;
     let role;
-    const data = await fetch ("https://634d42a5f5d2cc648ea0d537.mockapi.io/api/ayo/users")
+    const data = await fetch ("https://6350b9ac3e9fa1244e4bb9ad.mockapi.io/user")
     const raw = await data.json();
     const user = raw.forEach(element => {
         console.log (username + " " + password);
@@ -18,7 +18,7 @@ const loginHandler = async (e) => {
     if (ada===true){
         window.localStorage.setItem('username',username);
         window.localStorage.setItem('role',role);
-        window.location.href = "../dashboard";
+        window.location.href = "/user.html";
     }
     else{
         alert("Username atau Password salah");
